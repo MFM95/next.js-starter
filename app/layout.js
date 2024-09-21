@@ -18,13 +18,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    return (
+        <html lang="en">
+        <body>
+        <header>
+            <h1>Tourism Company</h1>
+        </header>
         {children}
-      </body>
-    </html>
-  );
+        <footer>
+            <p>&copy; 2024 Tourism Company</p>
+        </footer>
+        </body>
+        </html>
+    );
 }
